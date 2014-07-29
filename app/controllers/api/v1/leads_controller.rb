@@ -10,7 +10,7 @@ class Api::V1::LeadsController < ApplicationController
   end
 
   def create
-    respond with :api, :v1, Lead.create(lead_params)
+    respond_with :api, :v1, Lead.create(lead_params)
   end
 
   def update 
